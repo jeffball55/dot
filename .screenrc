@@ -1,0 +1,14 @@
+#hardstatus alwayslastline "%{= kc}%{kw}%H@$LOGNAME %{g}[ %?%-Lw%?%{= kY}%n*%f %t%?(%u)%?%{= kc}%?%+Lw%?%?%= %{g}] %{= kW}%c%{dd}"
+startup_message off
+defutf8 on
+defscrollback 1024
+defobuflimit 4096
+#bindkey -k k3 copy #F3 kopiuje
+#bindkey -k k4 paste . #F4 wkleja
+#bindkey -k k5 screen #F5 nowe okno
+#bindkey -k k6 other #F6 wczeniejsze okno (ostatnio wybrane)
+#bindkey -k k7 prev #F7 poprzednie okno
+#bindkey -k k8 next #F8 nastpne okno
+#bindkey -k k9 kill #F9 wycz okno
+bindkey -k f2 mapnotnext #F12 ignoruj kolejny klawisz
+caption always "%{= kw}%-w%{= BW}%n %t%{-}%+w %-= @%H - %LD %d %LM - %c"
